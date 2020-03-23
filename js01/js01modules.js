@@ -3,6 +3,7 @@ module.exports = {
   getPlayableMessage
 }
 
+//過濾掉無效的值
 function confirmInput(strTotalPurchaser) {
   const numTotalPurchaser = +strTotalPurchaser;
   if (Number.isNaN(numTotalPurchaser)) {
@@ -17,6 +18,7 @@ function confirmInput(strTotalPurchaser) {
   return numTotalPurchaser;
 }
 
+//分辨要播放或不播放的人數
 function getPlayableMessage(numTotalPurchaser) {
   if (!numTotalPurchaser) {
     return '本場次沒有觀眾，取消播放。(◞‸◟)';
