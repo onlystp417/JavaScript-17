@@ -9,12 +9,11 @@ function confirmInput(strTotalPurchaser) {
     throw new Error('呃...是要輸入人數哦！(╬☉д⊙)');
   }
   if (strTotalPurchaser === "") {
-    throw new Error('要輸入人數哦!!!!!!');
+    throw new Error('要輸入人數!!!!!!');
   }
   if (strTotalPurchaser < 0) {
-    throw new Error('呃...是要輸入人數哦！(╬☉д⊙)');
+    throw new Error('呃...人數不會小於零！(╬☉д⊙)');
   }
-
   return numTotalPurchaser;
 }
 
