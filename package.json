@@ -1,0 +1,22 @@
+{
+  "name": "js17",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js03.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/dwatow/j1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/dwatow/j1/issues"
+  },
+  "homepage": "https://gitlab.com/dwatow/j1#readme",
+  "devDependencies": {
+    "jest": "^25.2.3"
+  }
+}
