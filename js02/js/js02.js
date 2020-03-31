@@ -3,6 +3,7 @@
 // 引入 node.js 的 readline module
 const readline = require('readline');
 
+// 引入 js module
 const {
   confirmInput,
   compareTwoNumDivideThree
@@ -14,6 +15,7 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
+// 輸入介面
 function inputInterface() {
   rl.question('請輸入第一個整數', (strAanswer1) => {
     rl.question('請輸入第二個整數', (strAnswer2) => {
