@@ -29,5 +29,4 @@ describe('Question Interface', () => {
       expect(getPlayableMessage(12)).toMatch(`進場人數為 12 人，祝觀影愉快。(灬ºωº灬)`);
     })
   })
-
 })
