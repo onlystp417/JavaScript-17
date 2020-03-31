@@ -7,11 +7,11 @@ module.exports = {
 function confirmInput(strAnswer) {
   let consumerAge = +strAnswer;
   if (Number.isNaN(consumerAge)) {
-    throw new Error('你所輸入的值不是歲數，請重新輸入：');
+    throw new Error('你所輸入的值不是歲數，請重新輸入。');
   } else if (strAnswer === '') {
-    throw new Error('你沒有輸入值，請重新輸入：');
+    throw new Error('你沒有輸入值，請重新輸入。');
   } else if (consumerAge < 0) {
-    throw new Error('負值不符合歲數該有的值，請重新輸入：');
+    throw new Error('負值不符合歲數該有的值，請重新輸入。');
   }
 }
 
