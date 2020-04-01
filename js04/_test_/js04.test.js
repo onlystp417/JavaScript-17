@@ -13,8 +13,8 @@ describe('輸入正整數並印出 印出 1+2-3+4-5+6...n 算式與總和', () =
     it('輸入 "" 要回空字串錯誤', () => {
       expect(() => confirmInput('')).toThrow('你沒有輸入值，請重新輸入。')
     })
-    it('輸入 -1 要回負值錯誤', () => {
-      expect(() => confirmInput(-1)).toThrow('不可以輸入小於 2 的數字，請重新輸入。')
+    it('輸入 -1 要回非正整數錯誤', () => {
+      expect(() => confirmInput(-1)).toThrow('必須要輸入「正」整數，請重新輸入。')
     })
     it('輸入 0.3 要回浮點數錯誤', () => {
       expect(() => confirmInput(0.3)).toThrow('不可以輸入浮點數，請重新輸入。')

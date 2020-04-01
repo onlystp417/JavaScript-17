@@ -18,7 +18,7 @@ const rl = readline.createInterface({
 
 // 輸入介面
 function inputInterface() {
-  rl.question('請輸入一個不小於 2 的正整數：', (strAnswer) => {
+  rl.question('請輸入一個正整數：', (strAnswer) => {
     try {
       confirmInput(strAnswer);
       const message = `${printEquation(strAnswer)} = ${computeIntagers(strAnswer)}`;
