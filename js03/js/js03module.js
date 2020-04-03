@@ -1,6 +1,7 @@
 module.exports = {
   confirmInput,
-  ticketPriceCaculater
+  ticketPriceCaculater,
+  ticketTypeClassify
 }
 
 // 檔掉不合法的值
@@ -20,11 +21,26 @@ function ticketPriceCaculater(strAnswer) {
   let consumerAge = +strAnswer;
   const ticketPrice = 400;
   const discount = 0.5;
+  const ticketType = ticketTypeClassify(strAnswer);
   if (consumerAge <= 6) {
-    return `你可以買兒童票，票價為 ${ticketPrice * discount} 元。`;
+    return `你可以買${ticketType}，票價為 ${ticketPrice * discount} 元。`;
   } else if (consumerAge >= 65) {
-    return `你可以買敬老票，票價為 ${ticketPrice * discount} 元。`
+    return `你可以買${ticketType}，票價為 ${ticketPrice * discount} 元。`
   } else {
-    return `你的票價是 ${ticketPrice} 元。`;
+    return `你要買的是${ticketType}，票價為 ${ticketPrice} 元。`;
   }
+}
+
+// 票種分類
+function ticketTypeClassify(strAnswer) {
+  let consumerAge = +strAnswer;
+  let ticketType = '';
+  if (consumerAge <= 6) {
+    ticketType = '兒童票';
+  } else if (consumerAge >= 65) {
+    ticketType = '敬老票';
+  } else {
+    ticketType = '普通票';
+  }
+  return ticketType;
 }
