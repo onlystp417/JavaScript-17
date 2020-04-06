@@ -14,7 +14,7 @@ describe('輸入正整數並印出 印出 1+2-3+4-5+6...n 算式與總和', () =
       expect(() => confirmInput('')).toThrow('你沒有輸入值，請重新輸入。')
     })
     it('輸入 -1 要回非正整數錯誤', () => {
-      expect(() => confirmInput(-1)).toThrow('必須要輸入「正」整數，請重新輸入。')
+      expect(() => confirmInput(-1)).toThrow('不可以輸入零或負值，請重新輸入。')
     })
     it('輸入 0.3 要回浮點數錯誤', () => {
       expect(() => confirmInput(0.3)).toThrow('不可以輸入浮點數，請重新輸入。')
@@ -24,8 +24,20 @@ describe('輸入正整數並印出 印出 1+2-3+4-5+6...n 算式與總和', () =
     it('printEquation', () => {
       expect(printEquation(5)).toMatch('1 + 2 - 3 + 4 - 5');
     })
+    it('printEquation', () => {
+      expect(printEquation(8)).toMatch('1 + 2 - 3 + 4 - 5 + 6 - 7 + 8');
+    })
+    it('printEquation', () => {
+      expect(printEquation(12)).toMatch('1 + 2 - 3 + 4 - 5 + 6 - 7 + 8 - 9 + 10 - 11 + 12');
+    })
     it('computeIntagers', () => {
-      expect(computeIntagers(5)).toBe('-1');
+      expect(computeIntagers(9)).toBe('-3');
+    })
+    it('computeIntagers', () => {
+      expect(computeIntagers(17)).toBe('-7');
+    })
+    it('computeIntagers', () => {
+      expect(computeIntagers(34)).toBe('19');
     })
   })
 })
