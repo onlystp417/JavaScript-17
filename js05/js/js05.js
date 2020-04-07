@@ -17,7 +17,8 @@ function inputInterface() {
       console.log(message);
       rl.close();
     } else {
-      confirmInput(strAnswer);
+      let errorMessage = confirmInput(strAnswer);
+      console.log(errorMessage);
       inputInterface();
     }
   })
