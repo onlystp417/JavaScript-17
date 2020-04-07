@@ -3,16 +3,16 @@ function confirmInput(strAnswer) {
   let numAnswer = +strAnswer;
   const restrictNumber = 4;
   if (numAnswer < restrictNumber) {
-    console.log('你輸入的值不可以小於 4，請重新輸入。');
+    return '你輸入的值不可以小於 4，請重新輸入。';
   }
   if (numAnswer % 1) {
-    console.log('你輸入的值不可以含小數點，請重新輸入。');
+    return '你輸入的值不可以含小數點，請重新輸入。';
   }
   if (strAnswer === '') {
-    console.log('你沒輸入值，請重新輸入。');
+    return '你沒輸入值，請重新輸入。';
   }
   if (Number.isNaN(numAnswer)) {
-    console.log('不可以輸入非數字的值，請重新輸入。');
+    return '不可以輸入非數字的值，請重新輸入。';
   }
 }
 
