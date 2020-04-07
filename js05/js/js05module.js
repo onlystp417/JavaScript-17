@@ -2,16 +2,16 @@
 function confirmInput(strAnswer) {
   let numAnswer = +strAnswer;
   const restrictNumber = 4;
-  if (numAnswer < restrictNumber) {
-    return '你輸入的值不可以小於 4，請重新輸入。';
-  }
-  if (numAnswer % 1) {
-    return '你輸入的值不可以含小數點，請重新輸入。';
-  }
   if (strAnswer === '') {
     return '你沒輸入值，請重新輸入。';
   }
-  if (Number.isNaN(numAnswer)) {
+  else if (numAnswer % 1) {
+    return '你輸入的值不可以含小數點，請重新輸入。';
+  }
+  else if (numAnswer < restrictNumber) {
+    return '你輸入的值不可以小於 4，請重新輸入。';
+  }
+  else if (Number.isNaN(numAnswer)) {
     return '不可以輸入非數字的值，請重新輸入。';
   }
 }
@@ -43,7 +43,7 @@ function computeEvenNumber(strAnswer) {
       computed += item;
       return computed;
     }, 0);
-  return `${result}`;
+  return result;
 }
 
 module.exports = {
