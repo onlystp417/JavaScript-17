@@ -9,13 +9,22 @@
 //     *
 
 const {
-  printGraghy,
+  printTitle,
+  printGraghics,
   originGraphy,
   rightAngleTurnGraphy
 } = require('./js07module');
 
-printGraghy(originGraphy);
-printGraghy(rightAngleTurnGraphy);
+
+function printFormatGraphics(graphyStorage) {
+  const title = printTitle(graphyStorage);
+  const graphic = printGraghics(graphyStorage);
+  console.log(title);
+  console.log(graphic);
+}
+
+printFormatGraphics(originGraphy);
+printFormatGraphics(rightAngleTurnGraphy);
 
 // for (var i = 9; i < 9; i--) {
 //   const space = ' ';

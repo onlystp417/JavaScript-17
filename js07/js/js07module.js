@@ -21,19 +21,25 @@ const rightAngleTurnGraphy = [
   '            *  *      '
 ]
 
-function printGraghy(graphyStorage) {
+function printGraghics(graphyStorage) {
+  const result = graphyStorage.reduce((graphic, currentLine) => {
+    graphic += `${currentLine}\n`;
+    return graphic;
+  }, '');
+  return result;
+}
+
+function printTitle(graphyStorage) {
   if (graphyStorage === originGraphy) {
-    console.log('原始圖形：\n');
+    return '原始圖形：\n';
   } else {
-    console.log('轉 90˚ 圖形：\n');
+    return '轉 90˚ 圖形：\n';
   }
-  graphyStorage.forEach((line) => {
-    console.log(line);
-  })
 }
 
 module.exports = {
-  printGraghy,
+  printTitle,
+  printGraghics,
   originGraphy,
   rightAngleTurnGraphy
 }
