@@ -1,5 +1,4 @@
-
-// // 乘以 100 作法
+// 乘以 100 作法
 // function divideThree(answer) {
 //   let divideFrequency = 0;
 //   do {
@@ -18,10 +17,15 @@ function divideThree(answer) {
   do {
     answer = answer / 3;
     const formatStrFloat = answer.toString();
-    var hundredth = formatStrFloat[formatStrFloat.indexOf('.') + 2];
-    divideFrequency += 1;
+    if (formatStrFloat.indexOf('.') == -1) {
+      divideFrequency = 1;
+      break;
+    } else {
+      var hundredth = formatStrFloat[formatStrFloat.indexOf('.') + 2];
+      divideFrequency += 1;
+    }
   } while (hundredth !== '0') {
-    console.log('yes');
+    console.log('計算結束');
   }
   return divideFrequency;
 }
