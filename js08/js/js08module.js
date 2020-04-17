@@ -14,6 +14,7 @@
 // indexOf 作法
 function divideThree(answer) {
   let divideFrequency = 0;
+  let originAnswer = answer;
   do {
     answer = answer / 3;
     const formatStrFloat = answer.toString();
@@ -25,9 +26,8 @@ function divideThree(answer) {
       divideFrequency += 1;
     }
   } while (hundredth !== '0') {
-    console.log('計算結束');
+    return `${originAnswer} 要除以 ${divideFrequency} 次，小數點後二位才是 0。`;
   }
-  return divideFrequency;
 }
 
 function confirmInput(answer) {

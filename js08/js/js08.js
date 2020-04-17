@@ -3,7 +3,7 @@
 const {
   divideThree,
   confirmInput
-} = require('./js08module')
+} = require('./js08module');
 
 const rl = require('../../readline');
 
@@ -12,7 +12,7 @@ function inputInterface() {
     try {
       confirmInput(answer);
       const divideFrequency = divideThree(answer);
-      console.log(divideFrequency)
+      console.log(divideFrequency);
     } catch (err) {
       console.log(err.message);
       inputInterface();
