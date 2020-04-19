@@ -20,13 +20,13 @@ describe('重複除以 3 小數點第二位得 0 的次數', () => {
   })
   describe('重複除以 3 小數點第二位得 0 的次數', () => {
     it('輸入 44 回計算 8 次', () => {
-      expect(divideThree(44)).toMatch('44 要除以 8 次，小數點後二位才是 0。');
+      expect(divideThree(44)).toMatch('44 除以 3 要除 8 次，小數點後二位才是 0。');
     })
     it('輸入 71 回計算 9 次', () => {
-      expect(divideThree(71)).toMatch('71 要除以 9 次，小數點後二位才是 0。');
+      expect(divideThree(71)).toMatch('71 除以 3 要除 9 次，小數點後二位才是 0。');
     })
     it('輸入 36 回計算 1 次', () => {
-      expect(divideThree(36)).toMatch('36 要除以 1 次，小數點後二位才是 0。');
+      expect(divideThree(36)).toMatch('36 除以 3 要除 1 次，小數點後二位才是 0。');
     })
   })
 })
