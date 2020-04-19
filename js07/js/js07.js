@@ -23,8 +23,12 @@ function printFormatGraphics(graphyStorage) {
   console.log(graphic);
 }
 
-printFormatGraphics(originGraphy);
-printFormatGraphics(rightAngleTurnGraphy);
+function printAll(originGraphy, rightAngleTurnGraphy) {
+  printFormatGraphics(originGraphy);
+  printFormatGraphics(rightAngleTurnGraphy);
+}
+
+module.exports = printAll;
 
 // for (var i = 9; i < 9; i--) {
 //   const space = ' ';
