@@ -10,7 +10,7 @@ function confirmInput(inputAnswer) {
 function storeNames(strAnswerOne, strAnswerTwo, strAnswerThree, strAnswerFour) {
   let namesDepository = [];
   namesDepository.push(strAnswerOne, strAnswerTwo, strAnswerThree, strAnswerFour);
-  console.log(namesDepository);
+  // console.log(namesDepository);
   return namesDepository;
 }
 
@@ -29,7 +29,7 @@ function extractNameOddLetters(namesDepository) {
       nameOddLettersStorage.push(nameThird.charAt(i));
     }
   }
-  console.log(nameOddLettersStorage);
+  // console.log(nameOddLettersStorage);
   return nameOddLettersStorage;
 }
 
@@ -39,7 +39,6 @@ function outputLetters(nameOddLettersStorage) {
   for (i = 0; i < nameOddLettersStorage.length; i++) {
     result += ` ${nameOddLettersStorage[i]}`;
   }
-  console.log(result);
   return result;
 }
 

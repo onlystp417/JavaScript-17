@@ -47,18 +47,16 @@ function thirdInputInterface(strAnswerOne, strAnswerTwo) {
 
 function fourthInputInterface(strAnswerOne, strAnswerTwo, strAnswerThree) {
   rl.question('第四個名字：', (strAnswerFour) => {
-    console.log(strAnswerFour)
     try {
       confirmInput(strAnswerFour);
       let namesDepository = storeNames(strAnswerOne, strAnswerTwo, strAnswerThree, strAnswerFour);
-      console.log(namesDepository)
       let nameOddLettersStorage = extractNameOddLetters(namesDepository);
-      outputLetters(nameOddLettersStorage);
+      let outputResponse = `第一個名字和第三個名字的奇數字母為 ${outputLetters(nameOddLettersStorage)}`;
+      console.log(outputResponse);
+      rl.close();
     } catch (error) {
       console.log(error.message);
       fourthInputInterface(strAnswerOne, strAnswerTwo, strAnswerThree);
-    } finally {
-      rl.close();
     }
   });
 }
