@@ -37,8 +37,8 @@ function compareTwoNumDivideThree(strFirstAanswer, strSecondAnswer) {
   let firstIntager = +strFirstAanswer;
   let secondIntager = +strSecondAnswer;
   if (firstIntager % 3 === secondIntager % 3) {
-    return '餘數相同。';
+    return '分別除以 3，餘數相同。';
   } else {
-    return '餘數不相同。';
+    return '分別除以 3，餘數不相同。';
   }
 }

@@ -26,7 +26,7 @@ function divideThree(answer) {
       divideFrequency += 1;
     }
   } while (hundredth !== '0') {
-    return `${originAnswer} 要除以 ${divideFrequency} 次，小數點後二位才是 0。`;
+    return `${originAnswer} 除以 3 要除 ${divideFrequency} 次，小數點後二位才是 0。`;
   }
 }
 
