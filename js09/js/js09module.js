@@ -3,6 +3,7 @@ function sumOfTwoArray(arr1, arr2) {
   for (let i = 0; i < arr1.length && i < arr2.length; i++) {
     caculatedArray.push(arr1[i] + arr2[i]);
   }
+  console.log(`[${arr1}] 與 [${arr2}]`)
   console.log(`兩個陣列內的值相加後為： ${caculatedArray}`);
   return caculatedArray;
 }
