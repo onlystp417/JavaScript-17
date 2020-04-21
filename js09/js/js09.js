@@ -2,10 +2,10 @@
 
 const sumOfTwoArray = require('./js09module');
 
-const arr1 = [2, 3, 1, 7, 9];
+const arr1 = [2, 6, 5, 1, 4];
 const arr2 = [8, 7, 9, 3, 1];
 
-// sumOfTwoArray(arr1, arr2);
+sumOfTwoArray(arr1, arr2);
 
 module.exports = {
   arr1,

@@ -10,4 +10,4 @@ const {
 const primeNumber = pickPrimeNumber(arr);
 const primeNumberIndex = pickIndex(arr, primeNumber);
 
-outputResponse(primeNumber, primeNumberIndex);
+outputResponse(primeNumber, primeNumberIndex, arr);

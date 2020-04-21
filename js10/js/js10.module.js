@@ -29,7 +29,8 @@ function pickIndex(arr, resultValue) {
   return primeNumberIndex;
 }
 
-function outputResponse(primeNumber, primeNumberIndex) {
+function outputResponse(primeNumber, primeNumberIndex, arr) {
+  console.log(`在 [${arr}] 陣列中：`);
   for (let i = 0; i < primeNumber.length; i++) {
     console.log(`質數為： ${primeNumber[i]}，索引值是： ${primeNumberIndex[i]}`);
   }

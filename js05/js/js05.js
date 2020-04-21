@@ -24,6 +24,6 @@ function inputInterface() {
   })
 }
 
-// inputInterface();
+inputInterface();
 
 module.exports = inputInterface;

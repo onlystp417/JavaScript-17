@@ -28,6 +28,8 @@ function printAll(originGraphy, rightAngleTurnGraphy) {
   printFormatGraphics(rightAngleTurnGraphy);
 }
 
+printAll(originGraphy, rightAngleTurnGraphy);
+
 module.exports = printAll;
 
 // for (var i = 9; i < 9; i--) {
