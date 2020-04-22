@@ -11,15 +11,14 @@ const rl = require('../../readline');
 
 function inputInterface() {
   rl.question('輸入一個不小於 4 的數字', (strAnswer) => {
-    let numAnswer = +strAnswer;
-    if (numAnswer >= 4 && !(numAnswer % 1)) {
+    if (confirmInput(strAnswer)) {
+      const errorMessage = confirmInput(strAnswer);
+      console.log(errorMessage);
+      inputInterface();
+    } else {
       let message = `${printEquation(strAnswer)} = ${computeEvenNumber(strAnswer)}`;
       console.log(message);
       rl.close();
-    } else {
-      let errorMessage = confirmInput(strAnswer);
-      console.log(errorMessage);
-      inputInterface();
     }
   })
 }
