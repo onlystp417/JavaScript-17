@@ -13,7 +13,7 @@ function confirmMinutes(minutes) {
 }
 
 function germCultivation(germQuantity, minutes) {
-  return minutes >= 20 ? germCultivation(germQuantity, minutes - 20) * 2 : germQuantity;
+  return minutes >= 20 ? germCultivation(+germQuantity, +minutes - 20) * 2 : +germQuantity;
 }
 
 module.exports = {
