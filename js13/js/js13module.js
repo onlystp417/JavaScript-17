@@ -6,6 +6,7 @@ function tortoiseSpeed(totalInstance) {
     totalInstance -= perSecondForward;
     seconds++;
   }
+  // console.log(seconds);
   return seconds;
 }
 
@@ -24,11 +25,11 @@ function bunnySpeed(totalInstance) {
 }
 
 // 烏龜與兔子的秒數差距
-function speedGap() {
+function speedGap(tortoiseSeconds, bunnySeconds) {
   const totalInstance = 1000;
-  const tortoiseSeconds = tortoiseSpeed(totalInstance);
-  const bunnySeconds = bunnySpeed(totalInstance);
-  // console.log(tortoiseSpeed - bunnySpeed);
+  tortoiseSeconds = tortoiseSpeed(totalInstance);
+  bunnySeconds = bunnySpeed(totalInstance);
+  // console.log(tortoiseSeconds - bunnySeconds);
   return tortoiseSeconds - bunnySeconds;
 }
 
