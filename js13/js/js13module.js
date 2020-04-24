@@ -40,4 +40,9 @@ function formatTime() {
   return [formatMinutes, formatSeconds];
 }
 
-module.exports = formatTime;
+module.exports = {
+  tortoiseSpeed,
+  bunnySpeed,
+  speedGap,
+  formatTime
+}

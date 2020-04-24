@@ -5,7 +5,7 @@
 2017年12月12日的兔子界記錄: 每秒20公尺
 */
 
-const formatTime = require('./js13module');
+const { formatTime } = require('./js13module');
 
 function responseInterface() {
   const response = formatTime();
