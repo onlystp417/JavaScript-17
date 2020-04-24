@@ -32,6 +32,7 @@ function keyboardInput(strTotalPurchaser) {
   }
 };
 
-// pure function 
+
+// pure function
 
 

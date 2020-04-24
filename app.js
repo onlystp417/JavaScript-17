@@ -11,6 +11,8 @@ const { originGraphy, rightAngleTurnGraphy } = require("./js07/js/js07module");
 const js08 = require("./js08/js/js08.js");
 const { sumOfTwoArray } = require("./js09/js/js09");
 const { arr1, arr2, } = require("./js09/js/js09");
+// const js13 = require("./js13/js/js013.js");
+
 
 
 rl.question('要執行第幾題？', jsIndex => {
@@ -42,6 +44,9 @@ rl.question('要執行第幾題？', jsIndex => {
     case "9":
       sumOfTwoArray(arr1, arr2);
       break;
+    // case "13":
+    //   js13();
+    //   break;
     default:
       console.log("還沒有寫完這題。")
       rl.close();

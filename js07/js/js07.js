@@ -15,7 +15,6 @@ const {
   rightAngleTurnGraphy
 } = require('./js07module');
 
-
 function printFormatGraphics(graphyStorage) {
   const title = printTitle(graphyStorage);
   const graphic = printGraghics(graphyStorage);
@@ -28,9 +27,9 @@ function printAll(originGraphy, rightAngleTurnGraphy) {
   printFormatGraphics(rightAngleTurnGraphy);
 }
 
-printAll(originGraphy, rightAngleTurnGraphy);
+// printAll(originGraphy, rightAngleTurnGraphy);
 
-module.exports = printAll;
+module.exports = () => printAll;
 
 // for (var i = 9; i < 9; i--) {
 //   const space = ' ';

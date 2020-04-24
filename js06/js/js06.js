@@ -61,6 +61,6 @@ function fourthInputInterface(strAnswerOne, strAnswerTwo, strAnswerThree) {
   });
 }
 
-firstInputInterface();
+// firstInputInterface();
 
 module.exports = firstInputInterface;
