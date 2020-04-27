@@ -16,8 +16,6 @@ function caesarCipherInterface() {
       const charCodeArr = pickCharCode(strInput);
       const caesarCipherCodeArr = charCodePlusThree(charCodeArr);
       const newString = caesarCipherChar(caesarCipherCodeArr);
-      console.log(charCodeArr);
-      console.log(caesarCipherCodeArr);
       console.log(`你輸入的字母經過凱薩加密後，是 ${newString}`);
       rl.close();
     } catch (err) {
